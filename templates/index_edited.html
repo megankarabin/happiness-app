@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>World Happiness Predict-o-Matic 3000</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="ContactForm_v3/images/icons/happy_smiley_icon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../static/util.css">
+	<link rel="stylesheet" type="text/css" href="../static/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-contact3" style="background-image: url('ContactForm_v3/images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<span class="contact3-form-title">
+					World Happiness Predictor
+				</span>
+				<div> <p>Please use positive integer values only. </p></div><p></p>
+				<form class="contact3-form validate-form">
+					<form action = "/result" method="POST">
+
+					<div class="column">
+						<div class="wrap-input3 validate-input" data-validate="This field is required">
+							<p>Positive affect: <input class="input3" type="text" name="positive_affect" placeholder=1> </p>
+							<span class="focus-input3"></span> </div>
+						<div class="wrap-input3 validate-input" data-validate="This field is required">
+							<p>Negative affect: <input class="input3" type="text" name="negative_affect" placeholder=2> </p>
+							<span class="focus-input3"></span></div>
+						<div class="wrap-input3 validate-input" data-validate="This field is required">
+							<p>Social support: <input class="input3" type="text" name="social_support" placeholder=3> </p>
+							<span class="focus-input3"></span></div>
+						<div class="wrap-input3 validate-input" data-validate="This field is required">
+							<p>Freedom: <input class="input3" type="text" name="freedom" placeholder=4> </p>
+							<span class="focus-input3"></span></div> </div>
+					<div class="column">
+					<div class="wrap-input3 validate-input" data-validate="This field is required">
+						<p>Corruption: <input class="input3" type="text" name="corruption" placeholder=5> </p>
+						<span class="focus-input3"></span></div>
+					<div class="wrap-input3 validate-input" data-validate="This field is required">
+						<p>Generosity: <input class="input3" type="text" name="generosity" placeholder=6> </p>
+						<span class="focus-input3"></span></div>
+					<div class="wrap-input3 validate-input" data-validate="This field is required">
+						<p>Log GDP per capita: <input class="input3" type="text" name="log_of_gdp_per_capita" placeholder=7> </p>
+						<span class="focus-input3"></span></div>
+					<div class="wrap-input3 validate-input" data-validate="This field is required">
+						<p>Healthy Life Expectancy: <input class="input3" type="text" name="healthy_life_expectancy" placeholder=7> </p>
+						<span class="focus-input3"></span></div> </div>
+				</div>
+					<div></div>
+					<div class="container-contact3-form-btn">
+						<button class="contact3-form-btn">
+							Submit
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="../static/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/popper.js"></script>
+	<script src="../static/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="../static/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="../static/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
